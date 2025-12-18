@@ -1,0 +1,87 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+    body {
+      background-image:url("qr.png");
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      background-repeat:no-repeat;
+     background-size:cover ;
+      justify-content: center;
+      align-items: center;
+      min-height: 120vh;
+      margin: 0;
+    }
+
+    .container {
+      
+      padding: 30px;
+      border-radius: 170px;
+      border: 2px solid white;
+      text-align: center;
+      width: 400px;
+      height: 350px;
+    }
+
+    h1 {
+      color: cyan;
+    }
+
+    input {
+      width: 60%;
+      padding: 40px;
+      border-radius: 40px;
+      border: 2px solid black;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    button {
+      width: 60%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 20px;
+      background: aqua;
+      color: black;
+      cursor: pointer;
+      margin-bottom: 6px;
+    }
+
+    button:hover {
+      background: red;
+    }
+
+    #qrcode {
+      margin-top: 20px;
+    }
+    .TITLE{
+      text-align:center;
+      color:red;
+      margine-bottom:10px;
+      text-shadow:6px 3px 3px white;
+      font-size:20;
+    }
+  </style>
+</head>
+<body >
+  <div>
+  <div><big><H1 CLASS="TITLE">QR CODE GENERATOR</H1></big></div>
+  
+  <div class="container">
+    <h1>.WELCOME.</h1>
+    <input type="text" id="text" placeholder="Enter text or URL">
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <button onclick="downloadQRCode()">Download QR Code</button>
+    <div id="qrcode"></div>
+  </div>
+  </div>
+  
+</body>
+</html>
