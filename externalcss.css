@@ -1,0 +1,15 @@
+.ext{
+		border:2px solid white;
+		color:white;
+		text-align:center;
+		margin:auto;
+		width:50%;
+		height:200px;
+}
+.ext tfoot{
+		background-color:pink;
+		color:black;
+	}
+.ext th{
+		background-color:tomato;
+	}

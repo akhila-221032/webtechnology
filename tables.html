@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="externalcss.css">
+	<title>TABLES</title>
+	<style>
+	.inn{
+		
+		border:3px solid blue;
+		width:100%;
+		color:black;
+		background-color:yellow;
+
+	}
+	.in{
+		border:5px solid red;
+		color:white;
+		text-align:center;
+		margin:auto;
+		width:50%;
+		height:300px;
+	}
+	.in tfoot{
+		background-color:pink;
+		color:black;
+	}
+	.in thead{
+		background-color:pink;
+		color:black;
+	}
+	.in th{
+		background-color:pink;
+	}
+	.hello{
+		background-image:url("tableimg.png");
+		background-repeat:no-repeat;
+    	background-size:cover ;
+	}
+	
+</style>
+</head>
+<body>
+<div class="hello">
+<H1 style="color:white;"><marquee direction="right" loop="100" scrollamount="30">..BY INLINE_CSS..</marquee></H1>
+<table  border="5" rules="all" cellspacing="10" cellpadding="20" style="width:50%; margin:auto; color:white; font-size:50;" >
+	
+		<thead style="background-color:tomato;">
+		<tr style="color:black">
+			<th>NAMES</th>
+			<th>GRADES</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Akhila Seediri</td>
+			<td>95</td>
+		</tr>
+		<tr>
+			<td>Sravani Tulasi</td>
+			<td>92</td>
+		</tr>
+		<tr>
+			<td>Varshini </td>
+			<td>93</td>
+		</tr>
+	</tbody>
+</table>
+<H1 style="color:white;"><marquee  loop="100" scrollamount="20">..BY INTERNAL CSS..</marquee></H1>
+<table border="2" cellspacing="10" cellpadding="15"  class="in">
+	<thead>
+		<tr>
+			<th colspan="2">H1</th>
+			<th>H2</th>
+		</tr>
+	</thead>
+		<tr>
+			<td>
+				<table class="inn" rules="all">
+					<tr>
+						<td>td11_1</td>
+						<td>td11_2</td>
+					</tr>
+					<tr>
+						<td>td11_3</td>
+					</tr>
+
+				</table>
+			</td>
+			<td >td12</td>
+			<td rowspan="2" align="center">td13<br>td23</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" >td21,22</td>	
+		</tr>
+		<tfoot>
+		<tr>
+			<td>td31</td>
+			<td>td32</td>
+			<td>td33</td>
+		</tr>
+	</tfoot>
+</table>
+<h1 style="color:white;"><marquee direction="right" loop="100" scrollamount="20">..BY EXTERNAL CSS..</marquee></h1>
+	<table  rules="ALL" border="3" class="ext"  >
+		<thead>
+		
+		</thead>
+		<tr>
+			<th>S.NO</th>
+			<th>SUBJECTS</th>
+
+		</tr>
+		<tr>
+			<td>1.</td>
+			<td>WT</td>
+
+		</tr>
+		<tr>
+			<td>2.</td>
+			<td>COA</td>
+
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>DSP</td>
+
+		</tr>
+		<tfoot>
+		<tr>
+			<td colspan="2">CSE E2<br>sem_2</td>
+		</tr>
+		</tfoot>
+
+	</table>
+</div>
+</body>
+</html>
