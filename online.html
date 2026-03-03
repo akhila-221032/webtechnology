@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LearnHub | Online Learning</title>
+    <link rel="stylesheet" href="onlin.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Learning Path Acadamy 📚📚....</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+    </nav>  
+</header>
+
+<section class="hero">
+    <h2>Learn Anytime, Anywhere</h2>
+    <p>Build skills with online courses and achieve your Goals</p>
+    <button onclick="showAlert()">Get Started</button>
+</section>
+<!-- Courses Section -->
+<section class="courses">
+    <h2>Popular Courses</h2>
+
+    <div class="course-container">
+
+        <div class="course-card">
+            <h3>APPSC & TSPSC</h3>
+            <p>History, Econamy, Polity</p>
+            <button onclick="hello()">Enroll now</button>
+        </div>
+
+        <div class="course-card">
+            <h3>RRB & BANKING</h3>
+            <p>Arithmetic, Resoning</p>
+            <button onclick="hello()">Enroll now</button>
+        </div>
+
+        <div class="course-card">
+            <h3>CURRENT AFFAIRS</h3>
+            <p>DAILY NOTES</p>
+            <button onclick="hel()">Enroll now</button>
+        </div>
+
+        <div class="course-card">
+            <h3>DEFENCE</h3>
+            <p>Quant, Reasoning, Gk</p>
+            <button onclick="hello()">Enroll now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>thank you for watching</p>
+</footer>
+
+
+<script>
+function showAlert() {
+    alert("Welcome to Learning Path Academy!");
+}
+function hello(){
+    var a=confirm("is this cource ok for you??");
+    if(a == true){
+        alert(" welcom to my acadamy....");
+    }
+    else{
+        alert(" select another cource...")
+    }
+
+}
+function hel(){
+    alert("you need to follow this contineously..");
+}
+
+</script>
+
+</body>
+</html>
