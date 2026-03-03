@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include "dbtest.php";
 
 $email = $_POST['email'];
@@ -27,3 +28,24 @@ if ($status) {
     print "Invalid Login Details";
 }
 ?>
+=======
+session_start();
+require __DIR__ . '/config/db.php';
+$email = $_POST['email'] ?? '';
+$password = $_POST['password'] ?? '';
+if (!$email || !$password) {
+die("Email and password are required.");
+}
+// Find user
+$user = $users->findOne(['email' => $email]); if (!$user) {
+die("User not found. <a href='index.html'>Go back</a>");
+}
+// Verify password
+if (!password_verify($password, $user['password'])) {
+die("Invalid password. <a href='index.html'>Go back</a>");
+}
+// Login success
+$_SESSION['user'] = $user['email'];
+header("Location: dashboard.php");
+exit;
+>>>>>>> 5cba59c5d90b32d39f3deac1b01b14ac578d5299
